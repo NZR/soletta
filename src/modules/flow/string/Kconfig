@@ -34,7 +34,7 @@ config FLOW_NODE_TYPE_STRING
 # hierarchy.
 config USE_ICU
 	bool "Use ICU library"
-	depends on HAVE_ICU && FLOW_NODE_TYPE_STRING
+	depends on FLOW_NODE_TYPE_STRING
 	default y
 
 # This is the solely user of LIBPCRE. If gets wider use, move up in
